@@ -1,0 +1,22 @@
+CREATE TABLE book_stocks (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, sold INTEGER, price INTEGER);
+INSERT INTO book_stocks VALUES (1, "Fight Club", 10, 3, 40);
+INSERT INTO book_stocks VALUES (2, "Norwegian Wood", 10, 5, 40);
+INSERT INTO book_stocks VALUES (3, "Suicide", 10, 1, 40);
+INSERT INTO book_stocks VALUES (4, "Immortality", 10, 2, 50);
+INSERT INTO book_stocks VALUES (5, "Republik Kutu", 20, 15, 20);
+INSERT INTO book_stocks VALUES (6, "Kafka on The Shore", 10, 5, 50);
+INSERT INTO book_stocks VALUES (7, "My Name is Red", 20, 2, 50);
+INSERT INTO book_stocks VALUES (8, "The God Delusion", 10, 2, 55);
+INSERT INTO book_stocks VALUES (9, "Tree of Codes", 5, 1, 120);
+INSERT INTO book_stocks VALUES (10, "Metamorphosis", 20, 8, 40);
+INSERT INTO book_stocks VALUES (11, "Oblivion", 10, 2, 40);
+INSERT INTO book_stocks VALUES (12, "Other Colors", 10, 3, 70);
+INSERT INTO book_stocks VALUES (13, "Plague", 30, 8, 35);
+INSERT INTO book_stocks VALUES (14, "Notes from Underground", 20, 3, 40);
+INSERT INTO book_stocks VALUES (15, "The Sense of an Ending", 10, 1, 25);
+
+SELECT * FROM book_stocks;
+SELECT SUM(sold) FROM book_stocks;
+SELECT MAX(sold), item FROM book_stocks ORDER BY quantity;
+SELECT MIN(price), item FROM book_stocks ORDER BY price;
+SELECT MAX(price), item FROM book_stocks;
